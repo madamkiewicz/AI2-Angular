@@ -1,0 +1,23 @@
+/* styles.css */
+
+header nav {
+    display: flex;
+    padding: 10px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  header nav a:hover {
+    background-color: #555;
+  }
+  
+  header nav a.active {
+    background-color: #777; 
+  }
+  

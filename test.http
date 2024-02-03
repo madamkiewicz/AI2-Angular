@@ -1,0 +1,54 @@
+### GET list of tasks
+GET http://localhost:39198/todos
+Accept: application/json
+
+### GET list of non-comleted tasks
+GET http://localhost:39198/?completed=false
+Accept: application/json
+
+### GET list of comleted tasks
+GET http://localhost:39198/?completed=true
+Accept: application/json
+
+### GET list of archived tasks
+GET http://localhost:39198/?archived=false
+Accept: application/json
+
+### GET list of tasks sorted by ID ASC
+GET http://localhost:39198/?_sort=id&_order=asc
+Accept: application/json
+
+### GET list of tasks sorted by ID DESC
+GET http://localhost:39198/?_sort=id&_order=desc
+Accept: application/json
+
+### GET single task
+GET http://localhost:39198/1
+Accept: application/json
+
+### POST new task
+POST http://localhost:39198/todos
+Content-Type: application/json
+
+{
+"id": "3",
+"title": "Pierwsze zadanie",
+"deadline": "2022-01-28",
+"completed": false,
+"archived": false
+}
+
+### PUT update task
+PUT http://localhost:39198/todos/3
+Content-Type: application/json
+
+{
+  "title": "Pierwsze zadanie",
+  "deadline": "2022-01-28",
+  "completed": true,
+  "archived": true
+}
+
+### DELETE task
+DELETE http://localhost:39198/3
+Content-Type: application/json

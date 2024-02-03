@@ -1,0 +1,60 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  
+  .tasks .task {
+    background-color: #ffe6ff;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr auto;
+    grid-template-areas: 'title deadline actions';
+    grid-row-gap: 10px;
+  }
+  
+  .tasks .task .title,
+  .tasks .task .deadline,
+  .tasks .task .actions {
+    padding: 5px;
+  }
+  
+  .tasks .task .title {
+    grid-area: title;
+    font-family: 'Courier New'
+  }
+  
+  .tasks .task .deadline {
+    grid-area: deadline;
+    font-family: 'Courier New';
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .tasks .task .actions {
+    grid-area: actions;
+    text-align: right;
+  }
+
+  .new-task {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .new-task .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .new-task .form-group .form-control {
+    flex-grow: 1;
+  }
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
