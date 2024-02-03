@@ -3,6 +3,7 @@
     <a [routerLink]="['/details', i]">
       {{ person.firstName }} {{ person.lastName }} ({{ i }})
     </a>
+    <button class="delete" (click)="delete(i)">Remove</button>
   </li>
 </ul>
 

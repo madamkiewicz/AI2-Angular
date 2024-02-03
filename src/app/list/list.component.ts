@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {Person} from "../person";
-import {PersonLsService} from "../person-ls.service";
+import { Component, OnInit } from '@angular/core';
+import { Person } from "../person";
+import { PersonLsService } from "../person-ls.service";
 
 @Component({
   selector: 'app-list',
@@ -17,5 +17,12 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.people = this.personLsService.getAll();
+  }
+
+  delete(index: number) {
+    if (confirm("Jestes pewny?")) {
+      this.personLsService.deletePerson(index);
+      this.people = this.personLsService.getAll();
+    }
   }
 }

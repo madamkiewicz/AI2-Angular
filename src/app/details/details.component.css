@@ -1,43 +1,31 @@
-/* Style dla kontenera strony */
-.details-container {
-  max-width: 600px;
-  margin: auto;
+details-container {
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
-/* Style dla linku "Back" */
-.details-container a {
-  text-decoration: none;
-  color: #0066cc;
-  font-size: 16px;
-}
-
-/* Style dla sekcji person */
 .person {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 320px;
+  box-sizing: border-box;
 }
 
 .person h2 {
-  color: #333;
+  padding: 0;
+  margin: 0;
 }
 
-.info dt {
-  font-weight: bold;
-  margin-top: 10px;
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.info dd {
-  margin-top: 10px;
-}
-
-/* Style dla sekcji address */
-.address {
-  margin-top: 20px;
-}
-
-/* Style dla komunikatu alert */
-.alert {
-  color: #ff0000;
-  margin-top: 20px;
+dl.address {
+  background-color: #efefef;
+  margin: 10px -20px 0 -20px;
+  padding: 0 20px;
 }

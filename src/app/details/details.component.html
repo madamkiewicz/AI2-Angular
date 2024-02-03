@@ -4,7 +4,7 @@
     <a [routerLink]="'/'">&laquo; Back</a>
   </div>
 
-  <div *ngIf="person" class="person">cd.
+  <div *ngIf="person" class="person">
     <h2>{{person.firstName}} {{person.lastName}}</h2>
     <dl class="info">
       <dt>ID</dt>
@@ -29,5 +29,4 @@
   <div class="alert" *ngIf="!person">
     Person not found!
   </div>
-
 </div>
