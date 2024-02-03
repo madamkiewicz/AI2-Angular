@@ -1,0 +1,43 @@
+/* Style dla kontenera strony */
+.details-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style dla linku "Back" */
+.details-container a {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 16px;
+}
+
+/* Style dla sekcji person */
+.person {
+  margin-top: 20px;
+}
+
+.person h2 {
+  color: #333;
+}
+
+.info dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.info dd {
+  margin-top: 10px;
+}
+
+/* Style dla sekcji address */
+.address {
+  margin-top: 20px;
+}
+
+/* Style dla komunikatu alert */
+.alert {
+  color: #ff0000;
+  margin-top: 20px;
+}
